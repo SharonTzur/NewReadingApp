@@ -1,0 +1,39 @@
+<ion-view view-title="Reading Mode Statistics" class="my-background">
+    <ion-nav-buttons>
+        <button class="button button-icon icon back-arrow" ng-click="backRead()"></button>
+    </ion-nav-buttons>
+    <ion-content class="statistics">
+      <div style="font-size:15pt;"><b>  {{readingData.title}}</b></div>
+        <br>
+            <b>פסקאות</b><br>
+            כמות:
+            {{readingData.paragraphs.count}}<br>
+            ממוצע מרווח זמן:
+            {{readingData.paragraphs.timeAvg | number:3}}<br><br>
+
+        <b>עמודים</b><br>
+        כמות:
+        {{readingData.pages.count}}<br>
+        ממוצע מרווח זמן:
+        {{readingData.pages.timeAvg | number:3}}<br><br>
+
+        <b>איבוד קשב והמשך קריאה</b><br>
+        כמות:
+        {{readingData.LostAttentionMovedOn.count}}<br>
+        ממוצע מרווח זמן:
+        {{readingData.LostAttentionMovedOn.timeAvg | number:3}}<br><br>
+
+        <b>איבוד קשב וחזרה אחורה</b><br>
+        כמות:
+        {{readingData.LostAttentionWentBack.count}}<br>
+        ממוצע מרווח זמן:
+        {{readingData.LostAttentionWentBack.timeAvg | number:3}}<br><br>
+
+
+
+            <div ng-click="userSave()" class="button button-positive " style="display:inline-block;">שמירה</div>
+            <div ng-click="userDelete()" ng-disabled="true" class="button button-assertive "  style="display:inline-block;">מחיקה</div>
+{{loadData();}}
+
+    </ion-content>
+</ion-view>

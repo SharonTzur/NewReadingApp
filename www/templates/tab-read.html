@@ -1,0 +1,28 @@
+<ion-view view-title="Reading Mode" class="my-background">
+    <ion-nav-buttons>
+        <button class="button button-icon icon back-arrow" ng-click="back()"></button>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="secondary">
+        <button class="button button-icon icon unlock" ng-click="logout()"></button>
+    </ion-nav-buttons>
+    <ion-content class="">
+        <div class="row text-center">
+            <!--<div class="col timer">00:45</div>-->
+        </div>
+        <div class="row">
+            <div class="col">            <a class="button button-large button-balanced read " ng-click="movedParagraph()">עברתי פסקה</a>
+            </div>
+            <div class="col">            <a class="button button-large button-balanced read" ng-click="movedPage()">עברתי עמוד</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">       <a class="button button-large button-balanced icon-left ion-alert read-icon" ng-click="showPopupAttention()">איבדתי
+                קשב</a></div>
+            <div class="col">
+                <a class="button button-large button-balanced icon-left  ion-android-done read-icon" ng-click="showPopupFinished()">סיום קריאה</a></div>
+        </div>
+
+    </ion-content>
+</ion-view>
+

@@ -1,0 +1,56 @@
+/* Empty. Add your own CSS if you like */
+/* Empty. Add your own CSS if you like */
+
+
+.my-background {
+    background      : #ffffff url("../img/BACKGROUND.png") no-repeat center;
+    background-size : cover;
+    direction: rtl;
+
+}
+
+
+.basic-hand {
+    position : relative;
+    width    : 100%;
+    top      : 3px;
+    opacity  : 0.3;
+
+}
+
+.cover {
+    background-image    : url("../img/hand1.png");
+    background-size     : contain;
+    background-repeat   : no-repeat;
+    background-position : center;
+}
+
+.statistics {
+    font-size:13pt;
+
+}
+
+.popup-head{
+    direction: rtl;
+
+}
+.popup-title {
+    direction: rtl;
+}
+
+
+.popup-body{
+    direction: rtl;
+}
+
+
+.popup-buttons {
+     direction: rtl;
+     display: inline-block;
+ }
+
+.popup-buttons .button {
+    direction: rtl;
+    width: 100%;
+    margin-right: 0px;
+}

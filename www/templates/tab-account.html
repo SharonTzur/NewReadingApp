@@ -1,0 +1,36 @@
+<ion-view view-title="Account" class="my-background">
+    <ion-nav-buttons>
+        <button class="button button-icon icon back-arrow" ng-click="back()"></button>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="secondary">
+        <button class="button button-icon icon unlock" ng-click="logout()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+
+        <div style="display:inline-block; margin:5%; font-size:16pt;"><b>
+            שלום {{user.attributes.username}}
+        </b><br>
+        </div>
+        <button ng-click="startNew()" class="button button-block button-balanced ">
+קריאה חדשה
+        </button>
+
+
+        <button ng-click="refreshUnfinished()" class="button button-block button-calm">
+המשך קריאה
+        </button>
+
+        <ul ng-show="showUnfinished">
+            <li ng-click="loadSession($event)" ng-repeat="x in unfinishedSessions" style="cursor: pointer; font-size:16pt; padding:2%;">
+                <i class="ion-ios-refresh-outline" style="padding:5%;"></i>{{ x.attributes.title }}
+            </li>
+        </ul>
+
+        <button ng-click="" disabled="true" class="button button-block button-positive">
+סטטיסטיקות
+        </button>
+
+
+    </ion-content>
+</ion-view>
